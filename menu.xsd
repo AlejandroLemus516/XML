@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+	MidTerm Project
+	Author: Alejandro Lemus 
+	Date: 10/25/2015
+	
+	This is the menu.xsd schema file that validates against the greekfood.xml compound document.
+	
+-->	
+
+<?xml-stylesheet type="text/xsl" href="menu.xsl" ?>
+
+<xs:schema xmlns:xs= "http://www.w3.org/2001/XMLSchema"
+		   xmlns= "http://example.com/greekmenu"
+		   targetNamespace="http://example.com/greekmenu" 
+		   elementFormDefault="qualified" attributeFormDefault="unqualified">
+	  
+<!--
+	Element menuInfo is declared as a complexType with a sequence of title, summary, menu 
+	two of these elements are declared as global variables.
+	
+	vocabulary done in a vietnamise blind design.
+-->
+
+<xs:element name="menuInfo">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="menu" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<!--
+	Element menu is delcared here it is a complexType with a sequence of one child element 
+	named menuItems
+-->
+
+<xs:element name="menu">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="menuItems" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<!--
+	Element menuItems is declared here it is a complexType 
+	with a sequence child element named menuItem 
+	which ouccrs at least once but could be limitless.
+-->
+
+<xs:element name="menuItems">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="menuItem" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<!--
+	menuItem element is declared here.
+	It's a complexType element with a sequence
+	child element called called menuId which.
+	menuItem holds an attribute called course
+	that is required.
+-->
+
+<xs:element name="menuItem">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="menuId" />
+		</xs:sequence>
+		<xs:attribute name="course" use="required" />
+	</xs:complexType>
+</xs:element>
+
+
+<!-- 
+	Declared the price element 
+	It's a complexType with 
+	an attribute currency that is required.
+-->
+
+<xs:element name="price">
+</xs:element>
+
+<!--
+	Declared a rating element complexType 
+	with an attribute called star that is 
+	required.
+-->
+
+<xs:element name="rating">
+	<xs:complexType>
+		<xs:simpleContent>
+			<xs:extension base="xs:ENTITY">
+				<xs:attribute name="star" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:element>
+<!--
+	Declared a element by the name of menuId 
+	it is a complexType with children itemName,
+	description, price , and rating.
+-->
+<xs:element name="menuId">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="itemName" />
+			<xs:element ref="description" />
+			<xs:element name="price" />
+			<xs:element name="rating" />
+		</xs:sequence>
+		<xs:attribute name="gid" use="required" />
+	</xs:complexType>
+</xs:element>
+<!--
+	This is where I declared all my elements globally 
+	then referenced them in the complex elements.
+-->
+<xs:element name="title" type="xs:string" />
+<xs:element name="summary" type="xs:string" />
+<xs:element name="itemName" type="xs:string" />
+<xs:element name="description" type="xs:string" />
+
+
+
+<!--
+	This is where I declared my simpleTypes 
+	custom data types for my xml vocabulary.
+-->
+
+<xs:simpleType name="course">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[a-z]" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="gid">
+	<xs:restriction base="xs:ID">
+		<xs:pattern value="GF\d{3}" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="star">
+	<xs:restriction base="xs:int">
+		<xs:pattern value="[1-4]" />
+	</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

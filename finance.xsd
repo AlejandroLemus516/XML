@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://example.com/finance"
+		   targetNamespace="http://example.com/finance"
+		   elementFormDefault="qualified">
+		   
+<xs:element name="finance">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="title" />
+			<xs:element name="links" />
+			<xs:element name="menuItems" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="links">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="link" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="link">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="home" />
+			<xs:element name="menu" />
+			<xs:element name="recipe" />
+			<xs:element name="finance" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="menuItems" minOccurs="1" maxOccurs="unbounded">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="foodCourse" />
+			<xs:element name="menuItem" />
+			<xs:element name="price" />
+			<xs:element name="productSold" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+<xs:element name="title" type="xs:string" />
+<xs:element name="home" type="xs:string" />
+<xs:element name="menu" type="xs:string" />
+<xs:element name="recipe" type="xs:string" />
+<xs:element name="finance" type="xs:string" />
+<xs:element name="foodCourse" type="xs:string" />
+<xs:element name="menuItem" type="xs:string" />
+<xs:element name="price" type="xs:float" />
+<xs:element name="productSold" type="xs:integer" />
+
+</xs:schema>

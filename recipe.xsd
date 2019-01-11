@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	
+<!-- 
+	MidTerm project 
+	
+	Author: Alejandro Lemus 
+	
+	Date: 10/26/2015
+	
+	This is the Schema for the recipe xml vocabulary.
+	It hollds the decleration to the namespace and the 
+	recipe namespace. ElementFormDefault are declared as 
+	qualified.
+-->	
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://example.com/recipe"
+		   targetNamespace="http://example.com/recipe"
+		   elementFormDefault="qualified">
+
+<!-- 
+	This is the decleration root element for the xml file
+	the root element is called recipe. It holds a child element 
+	by the name of recipes. 
+-->
+
+<xs:element name="recipe">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="recipes" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>	
+	
+<!-- 
+	Declared a element by the name of recipes that occues multiple times with in the 
+	root element. It is also a parent element with child elements called menuItem,
+	ingredient, and instruction.
+--> 	
+
+<xs:element name="recipes">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="menuItem" />
+			<xs:element ref="ingredient" />
+			<xs:element ref="instruction" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+	
+<!-- Elements are declared globally -->	
+	
+<xs:element name="menuItem" type="xs:string" />
+<xs:element name="ingredient" type="xs:string" />
+<xs:element name="instruction" type="xs:string" />
+</xs:schema>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://example.com/index"
+		   targetNamespace="http://example.com/index"
+		   elementFormDefault="qualified">
+		   
+		   
+<xs:element name="index">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="links" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>		      
+
+<xs:element name="links">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="title" />
+			<xs:element name="link" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="link">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="home" />
+			<xs:element ref="menu" />
+			<xs:element ref="recipe" />
+			<xs:element ref="finance" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="title" type="xs:string" />
+<xs:element name="home" type="xs:string" />
+<xs:element name="menu" type="xs:string" />
+<xs:element name="recipe" type="xs:string" />
+<xs:element name="finance" type="xs:string" />
+
+</xs:schema>

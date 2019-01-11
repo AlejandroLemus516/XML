@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+	MidTerm Project
+	Author: Alejandro Lemus 
+	Date: 10/25/2015	
+-->
+
+<!--
+	Declared a DTD to the recipe.xml 
+-->
+
+
+
+<!--
+	Declared root element named recipe.
+-->
+
+
+<?xml-stylesheet type="text/xsl" href="recipe.xsl" ?>
+
+<recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="recipe.xsd">
+		
+	<!-- Declared child element recipes -->
+	<recipes>
+	<!-- Declared child element menuItem recipes the parent element. -->
+	
+		<menuItem>Giouvetsi</menuItem>
+		
+	<!-- Decalred child element ingrdient sibling to menuItem -->
+		<ingredient>
+			<![CDATA[
+				<br />
+				1 kg/35 ounces veal (shoulder), cut into portions. <br />
+				2 medium red onions, finely chopped.<br />
+				2 carrots, sliced (1 cm thick).<br />
+				1 tin of chopped tomatoes.<br />
+				2 tbsps tomato puree.<br />
+				1 tsp sugar.<br />
+				1 glass of red wine.<br />
+				1 cinnamon stick.<br />
+				1/2 cup of olive oil.<br />
+				250g orzo pasta (9 ounces)( kritharaki ).<br />
+				100g grated kefalotyri or feta cheese (5 ounces).
+				]]>
+		</ingredient>
+		
+		<!-- Declared the instruction element sibling menuItem and ingredient -->
+		
+		<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		Wipe the meat with paper towels. Heat 1/2 of a cup of olive oil into a pan, add the chopped onions and carrots and sauté for 5 minutes in medium-low heat. 
+		Turn up the heat and add the veal; brown the meat on all sides until crusty.
+		<br />
+		Step 2:
+		<br />
+		Stir in the tomato purée and pour in the red wine; wait for the wine to evaporate. 
+		Add the tinned tomatoes, a glass of water, the sugar, the cinnamon stick and a good pinch of salt and pepper.
+		<br />
+		Step 3:
+		<br />
+		Turn the heat down and simmer with the lid on for about 45 minutes.
+		<br />
+		Step 4:
+		<br />
+		In the meantime, heat another pan, add 3 tbsps of olive oil and the orzo pasta and sauté, until golden.
+		<br />
+		Step5:
+		<br />
+		Place the orzo pasta in an oven tray along with the meat and sauce (remove the cinnamon stick) and mix. Cover the tray with some aluminum foil and bake in preheated oven at 180C for 30 minutes. 
+		Remove the aluminum foil, add a glass of water if needed, and put back in the oven for another 15 minutes.
+		Sprinkle with some ergrated kefalotyri.
+		]]>
+		</instruction>
+	
+	</recipes>
+	<recipes>
+		<menuItem>Gyro</menuItem>
+		<ingredient>
+		<![CDATA[
+			<br />
+			1 medium onion, finely chopped or shredded.<br />
+			2 pounds ground lamb.<br />
+			1 tablespoon finely minced garlic.<br />
+			1 tablespoon dried marjoram.<br />
+			1 tablespoon dried ground rosemary.<br />
+			2 teaspoons kosher salt.<br />
+			1/2 teaspoon freshly ground black pepper.
+			]]>
+		</ingredient>
+		<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		Place the onion in a food processor, and process until finely chopped. Scoop the onions onto the center of a towel, gather up the ends of the towel, and squeeze out the liquid from the onions. 
+		Place the onions into a mixing bowl along with the lamb and beef. Season with the garlic, oregano, cumin, marjoram, rosemary, thyme, black pepper, and salt. 
+		Mix well with your hands until well combined. Cover, and refrigerate 1 to 2 hours to allow the flavors to blend.
+		<br />
+		Step 2: 
+		<br />
+		Preheat oven to 325 degrees F (165 degrees C).
+		<br />
+		Step 3: 
+		<br />
+		Place the meat mixture into the food processor, and pulse for about a minute until finely chopped and the mixture feels tacky. Pack the meat mixture into a 7x4 inch loaf pan, making sure there are no air pockets. 
+		Line a roasting pan with a damp kitchen towel. Place the loaf pan on the towel, inside the roasting pan, and place into the preheated oven. 
+		Fill the roasting pan with boiling water to reach halfway up the sides of the loaf pan.
+		<br />
+		Step 4:
+		<br />
+		Bake until the gyro meat is no longer pink in the center, and the internal temperature registers 165 degrees F (75 degrees C) on a meat thermometer, 45 minutes to 1 hour. 
+		Pour off any accumulated fat, and allow to cool slightly before slicing thinly and serving.
+		]]>
+		</instruction>
+	</recipes>
+	<recipes>
+		<menuItem>Fasolada</menuItem>
+		<ingredient>
+		<![CDATA[
+			<br />
+			1/2 kg dried navy beans, soaked overnight 
+			(cannelini beans are traditional in greece).<br />
+			1/2 cup olive oil.<br />
+			4 tablespoons tomato paste.<br />
+			2 garlic cloves, minced.<br />
+			1 1/2 cups onions, cut in small dice.<br />
+			1 1/2 cups celery, cut in small dice.<br />
+			1 1/2 cups carrots, cut in small dice.<br />
+			1 1/2 cups potatoes, cut in small dice.<br />
+			1/3 teaspoon red chili pepper flakes.<br />
+			salt and pepper.
+			]]>
+		</ingredient>
+		<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		Cook the beans until tender Drain.
+		<br />
+		Step 2:
+		<br />
+		In a soup pot, add beans and enough water to cover beans plus 3 extra cups of water. Bring to a simmer. 
+		Add remaining ingredients, season to taste with salt and pepper, and simmer until vegetables are cooked through, and soup has thickened, about 20 minutes. 
+		(greeks like soft veggies, you may want your soup cooked slightly less if you like crispier veggies). 
+		]]>
+		</instruction>
+	</recipes>
+	<recipes>
+		<menuItem>Avgolemono</menuItem>
+		<ingredient>
+			<![CDATA[
+				<br />
+				4 cups chicken broth.<br />
+				1/4 cup uncooked orzo 
+				(or rice or pastina.)<br />
+				Salt and pepper to taste.<br />
+				3 eggs.<br />
+				3 tablespoons lemon juice.
+			]]>
+		</ingredient>
+		<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		In a large saucepan, bring the broth to a boil. 
+		<br />
+		Step 2:
+		<br />
+		Add the orzo, rice, or pastina and cook until tender but still al dente, about 7 minutes (20, if using rice). 
+		Season with the salt and pepper and reduce heat to low; simmer. 
+		<br />
+		Step 3:
+		<br />
+		Meanwhile, in a medium bowl, whisk together the eggs and lemon juice until smooth. 
+		<br />
+		Step 4:
+		<br />
+		Ladle about 1 cup of the hot broth into the egg-and-lemon mixture, then whisk to combine.
+		<br />
+		Step 5:
+		<br />
+		Add the mixture back to the simmering saucepan. Stir just until the soup becomes opaque and thickens as the eggs cook, 1 to 2 minutes. 
+		Add more salt and pepper, if desired, and serve. 
+		]]>
+		</instruction>
+	</recipes>
+	<recipes>
+		<menuItem>Sliced Feta</menuItem>
+			<ingredient>
+				<![CDATA[
+				<br />
+				Feta.<br />
+				Oregano.<br />
+				Olive oil.
+				]]>
+			</ingredient>
+		<instruction>
+		<![CDATA[
+			<br />
+			Step 1: 
+			<br />
+			Put a 1/2 inch slice of feta cheese on a salad plate. 
+			<br />
+			Step 2:
+			<br />
+			Serve it plain, or sprinkle with oregano (and pepper if you like), and drizzle with olive oil.
+			<br />
+			Step 3:
+			<br />
+			Feta is a salty cheese that adds flavor to whatever else you've got on the menu, and an authentic Greek touch to your table.
+		]]>
+		</instruction>
+	</recipes>
+	<recipes>
+		<menuItem>Melitzanes Tiganites</menuItem>
+		<ingredient>
+			<![CDATA[
+			<br />
+			1/2 cup all-purpose flour or cornstarch.<br />
+			3 eggs, lightly beaten.<br />
+			2 cups fresh bread crumbs. <br />
+			1/2 teaspoon salt, plus additional for sprinkling eggplant. <br />
+			1 tablespoon Essence, recipe follows. <br />
+			1 small eggplant, cut crosswise into 1/4-inch thick slices and then quartered. 
+			Vegetable oil, for deep frying.
+			]]>
+		</ingredient>
+		<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		Place the flour, egg, and bread crumbs each in 3 small bowls. Add the 1/2 teaspoon of salt to the egg and whisk to combine. 
+		Season the bread crumbs with the tablespoon of Essence and stir with a fork or your hands to thoroughly combine.
+		<br />
+		Step 2:
+		<br />
+		Dredge each piece of eggplant in the flour, coating thoroughly and then shaking to remove any excess flour. 
+		Coat each piece with the egg, then dredge in the bread crumb mixture, pressing to make the bread crumbs adhere. 
+		Transfer the eggplant pieces to a rack or to paper towels to let them dry slightly before frying.
+		<br />
+		Step 3:
+		<br />
+		In a deep, heavy skillet heat 1/2-inch of vegetable oil to 375 degrees F. Fry the eggplant pieces, in batches if necessary, for about 1 minute on each side, or until golden brown.
+		]]>
+		</instruction>
+	</recipes>
+	<recipes>
+	<menuItem>Baklava</menuItem>
+	<ingredient>
+	<![CDATA[
+		<br />	
+		100ml olive oil, plus extra for brushing.<br />
+		2 onions, halved and finely sliced.<br />
+		500g aubergines, cut into long 5mm thick slices.<br />
+		2 garlic cloves, finely chopped.<br />
+		2 tsp ground cinnamon.<br />
+		5 tbsp tomato purée.<br />
+		10 vine-ripened plum tomatoes, skinned and roughly chopped.<br />
+		pinch of sugar.<br />
+		1 bunch dill, finely chopped.<br />
+		2 tsp dried mint.<br />
+		dash of red wine vinegar.<br />
+		1 pack filo pastry (14 sheets).<br />
+		100g butter, melted.<br />
+		100g Medjool dates, stoned and finely sliced.<br />
+		50g flaked almonds.<br />
+		200g feta, crumbled.<br />
+		6 tbsp clear honey.<br />
+		houmous, to serve.<br />
+		dressed green leaves, to serve.<br />
+		parsley, to serve.<br />
+		chopped Kalamata olives, to serve.
+		]]>
+	</ingredient>
+	<instruction>
+	<![CDATA[
+	<br />
+	Step 1:
+	<br />
+	Heat the olive oil in a large heavy-based pan over a low heat and sauté the onions until softened and sticky – this can take up to 30 mins.
+	<br />
+	Step 2:
+	<br />
+	Meanwhile, heat a griddle pan until very hot. Brush a few of the aubergine slices with a little oil, sprinkle with sea salt and cook over a high heat until well charred and cooked through, 
+	5-7 mins, turning halfway through cooking. Lift onto kitchen paper and cook the remaining slices.
+	<br />
+	Step 3:
+	<br />
+	Add the garlic, cinnamon and tomato purée to the onions and cook for a further 2 mins. Add the tomatoes, sugar, dill, mint, vinegar and a generous pinch of sea salt. 
+	Reduce the heat to a simmer and cook for 10-15 mins until thickened. Adjust the seasoning to taste and allow to cool. Can be made up to 2 days ahead.
+	<br />
+	Step 4:
+	<br />
+	Heat oven to 180C/160C fan/gas 4. Unfold the pastry and cover with a damp cloth to prevent it drying out. Brush a baking tray (about 30 x 20cm) with melted butter. 
+	Line the tray with a sheet of filo (cut to fit if too big), brush with butter and repeat until you have a 6-layer thickness. Spread half the tomato mixture over the pastry, top with half each of the dates, almonds and feta, 
+	and cover with half of the aubergine slices. Sandwich another 4 layers of filo together with melted butter and place on top of the aubergines. 
+	Top with the remaining tomato mixture, dates, feta and aubergines. Sandwich the remaining 4 filo sheets together as before and place on top.
+	<br />
+	Step 5:
+	<br />
+	Lightly score the top, cutting into diamonds about 5 x 10cm. Brush with the remaining butter, splash with a little water and cook for 35-45 mins or until golden. Leave to cool a little before serving, then drizzle each portion with a little honey. 
+	Serve with houmous and a bowl of mixed green leaves, dressed with olive oil and lemon juice, with flat-leaf parsley leaves and chopped Kalamata olives.
+	]]>
+	</instruction>
+	</recipes>
+	
+	<recipes>
+	<menuItem>Bougatsa</menuItem>
+	<ingredient>
+		<![CDATA[
+		<br />
+		1 egg, room temperature. <br /> 
+		1 egg yolk, room temperature.<br />
+		1/4 cup sugar.<br />
+		1 1/2 cups whole milk.<br />
+		1/4 cup semolina (farina).<br />
+		1/2 cup butter, cut into bits.<br />
+		2 teaspoons fresh lemon juice.<br />
+		1 lemon, zest of.<br />
+		1/2 teaspoon vanilla extract.<br />
+		8 -10 phyllo pastry, thawed, covered with dampened towel. <br />
+		1/2 cup butter, melted.<br />
+		Icing sugar.<br />
+		Cinnamon.
+		]]>
+	</ingredient>
+	<instruction>
+		<![CDATA[
+		<br />
+		Step 1:
+		<br />
+		Combine 3 cups milk and white sugar in a saucepan over medium-high heat. Bring to the boil. Remove from heat.
+		<br />
+		Step 2:
+		<br />
+		Combine plain flour, cornflour, vanilla sugar, vanilla essence, egg yolks and remaining 1/2 cup milk in a bowl. Whisk to form a paste. 
+		Slowly add hot milk mixture, whisking constantly, until smooth. Return custard to saucepan. Cook, stirring with a wooden spoon, over low heat for 10 minutes or until thickened. Do not boil. Remove from heat. 
+		Add lemon rind. Pour custard into a heatproof bowl. Cover surface with plastic wrap and refrigerate for 3 hours or until cold.
+		<br />
+		Step 3:
+		<br />
+		Preheat oven to 180°C. Lightly grease 2 large, flat baking trays. Place 1 pastry sheet on a work surface. Brush with melted butter. Fold in half crossways to form a rectangle. Spoon 1/4 cup custard onto pastry centre. 
+		Brush edges with butter. Fold long edges over to cover custard. Fold in sides to form a 7cm x 11cm rectangle. Place, seam side down, on prepared tray. Brush top with butter. Sprinkle with a little cinnamon sugar.
+		<br />
+		Step 4:
+		<br />
+		Repeat with remaining pastry, butter, custard and sugar. Bake for 15 minutes. Swap trays over in oven and bake for a further 5 to 8 minutes or until golden and crisp. Stand for 10 minutes to cool slightly. 
+		Sprinkle with remaining cinnamon sugar. Serve warm.
+		<br />
+			]]>
+	</instruction>
+	</recipes>
+</recipe>

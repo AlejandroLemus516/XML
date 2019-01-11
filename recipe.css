@@ -1,0 +1,50 @@
+﻿body{
+	background-color:#993300;
+	
+}
+
+#menuTitle{
+	margin: -9.5px -10px 0px -10px;
+	background-color: #cacc00;
+	padding:5px;
+	color:#993300;
+	font-siZe:1.25em;
+	text-align:center;
+	
+}
+
+#img{
+	background-color:#ff9933;
+}
+#titleInstruction{
+	margin: -9.5px -10px 0px -10px;
+	background-color: #cacc00;
+	padding:5px;
+	color:#993300;
+	font-siZe:1.25em;
+	text-align: center
+}
+#title{
+	font-family:script;
+	color:#993300;
+	background-color: #cacc00;
+	text-align:center;
+	font-size:2.50em;
+}
+#link{
+	background-color:#cacc00;
+	padding:10px;
+	text-align: center;
+	color:#993300;
+	font-size: 1.25em;
+}
+.ingredient{
+	background-color:white;
+	float:left;
+	margin: 50px 35px 10px 35px;
+	width: 850px;
+    height: 475px;
+	padding:10px;
+}
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	
+
+<?xml-stylesheet type="text/xsl" href="index.xsl" ?>
+	
+	
+<index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="index.xsd">
+	<links>
+		<title>The Greek Menu Homepage</title>
+		<link>
+			<home>Home</home>
+			<menu>Menu</menu>
+			<recipe>Recipe</recipe>
+			<finance>Financial Report</finance>
+		</link>
+	</links>
+</index>

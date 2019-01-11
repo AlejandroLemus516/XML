@@ -1,0 +1,65 @@
+#header{
+	margin-top:-10px; 
+	background-color: black;
+}
+#mainTitle{
+	color:white;
+	background-color:black;
+	font-size:2.0em;
+	padding: 10px 100px 10px 10px;
+}
+#link{
+	text-align: center;
+	background-color: black;
+	font-size: 1.50em;
+	color: white;
+
+}
+
+body {
+   background-color: #ffcc00;
+   margin: 10px auto;
+ 
+}
+
+#title{
+   font-family:Florence;
+   font-style: italic;
+   background-color: #ffcc00;
+   font-size: 1.25em;
+   text-align: center;
+   font-weight: normal;
+   padding: 5px 0px 5px 10px;
+}
+#summary{
+   background-color:white;
+   padding: 10px;
+   border-radius: 15px;
+   margin:5px 0px 5px 0px;
+}
+#greekcourse{
+   padding: 5px 0px 0px 10px;
+   background-color:#ffffff;
+   font-size:1.50em;
+   font-family: Goudy Old Style;
+   margin:10px 50px 10px 15px;
+   border-bottom: #800000 double 2px;
+}
+
+.menu {
+   margin:15px 15px;
+   min-height:250px;
+   position:center;
+   border: 1px solid black;
+   border-radius: 20px;
+   padding: 10px 10px 0px 10px;
+   max-width: 600px;
+   background-color: #ff9933;
+   box-shadow: rgb(151, 151, 151) 8px 8px 15px;
+}
+.font {
+   margin-top:10px;
+   font-family:Goudy Old Style;
+   font-size: 1.15em;
+}
+

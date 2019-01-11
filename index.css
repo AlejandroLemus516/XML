@@ -1,0 +1,31 @@
+body{
+	background-color: black;
+	
+}
+#link{
+	color:black;
+	background-color:yellow;
+	text-align:center;
+	margin:141px -8px 0px -8px;
+	font-size:1.75em;
+	padding: 5px;
+}
+#picture{
+	margin:-8px -8px 0px -10px;
+	text-align:right;
+}
+#title{
+	background-color:#b35900;
+	margin:-200px -8px 0px -8px;
+	font-size: 3.0em;
+	text-align:left;
+	padding-left: 50px;	
+}
+
+#slideshow{
+	text-align: center;
+	border: black 1px solid;
+	margin: 10px -8px 0px -8px;
+	background-color: red;
+}
+

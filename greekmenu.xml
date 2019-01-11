@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	
+<!--
+	
+	MidTerm Project
+	Author: Alejandro Lemus 
+	Date: 10/25/2015
+	
+	Files used: menu.xsd
+	
+-->
+<!--
+This is my greekmenu.xml vocabulary 
+
+The root element is menuInfo followed by child 
+elements called title, summary, and menu.
+
+menu is the parent of menuItems.
+
+menuItems is the parent of menuItem
+
+menuItem has children that contain an attribute called
+
+menuId, description, price, rating.
+
+
+-->
+
+<?xml-stylesheet type="text/xsl" href="menu.xsl" ?>
+
+<menuInfo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+	
+		  schemaLocation="http://example.com/greekmenu menu.xsd">
+		  
+	<menu>
+		<menuItems> 							
+			<menuItem course="Entree">
+				<menuId gid="GF001">
+					<itemName>Giouvetsi</itemName>
+					<description>
+					<![CDATA[
+					Amazingly tasty and tender! Giouvetsi, or youvetsi is a centuries old dish that was traditionally 
+					served as a one-pot meal and in the old days. 
+					]]>
+					</description>
+					<price currency="USD">$11.95</price>
+					<rating star="3">&#9733; &#9733; &#9733;</rating>
+				</menuId>
+		  </menuItem>
+		  <menuItem course="Entree">
+		  		<menuId gid="GF002">
+		  			<itemName>Gyros</itemName>
+					<description>
+					<![CDATA[
+					A sandwich made usually of sliced roasted lamb, onion, and tomato on pita bread.
+					]]>
+					</description>
+					<price currency="USD">$9.50</price>
+					<rating star="4">&#9733; &#9733; &#9733; &#9733;</rating>
+				</menuId>
+		</menuItem>	
+		<menuItem course="Soup">
+			<menuId gid="GF003">
+				<itemName>Fasolada</itemName>
+				<description>
+				<![CDATA[
+				Fasolada is an amazing dish which is hardly known outside the borders of Greece. 
+				It’s a tasty soul-soothing bean, carrots and celery soup, which is widely popular in Greece.
+				]]>
+				</description>
+				<price currency="USD">$7.25</price>
+				<rating star="2">&#9733; &#9733;</rating>
+			</menuId>
+		</menuItem>
+		<menuItem course="Soup ">
+			<menuId gid="GF004">
+			   <itemName>Avgolemono</itemName>
+			   <description>
+			   <![CDATA[
+			   A Egg-Lemon soup. The traditional broth is thickened with eggs and falovered with lemon to make a dense,
+			   creamy soup with great taste and texture.
+		       ]]>
+			  </description>
+			  <price currency="USD">$8.50</price>
+			  <rating star="3">&#9733; &#9733; &#9733;</rating>
+			</menuId>
+		</menuItem>
+		<menuItem course="Appetizer">
+			<menuId gid="GF005">
+				<itemName>Sliced Feta</itemName>
+				<description>
+				<![CDATA[
+				A 1/2 inch slice of feta cheese on a salad plate. You can it plain or served 
+				with a sprinkle of oregano and drizzeled with olive oil. 
+				]]>
+				</description>
+				<price currency="USD">$4.50</price>
+				<rating star="2">&#9733; &#9733;</rating>
+			</menuId>
+		</menuItem>
+		<menuItem course="Appetizer">
+			<menuId gid="GF006">
+				<itemName>Melitzanes Tiganites</itemName>
+				<description>
+				<![CDATA[
+				Eggplant fried to crispy perfection, Served in slices of four could compliment any Entree.
+				]]>
+				</description>
+				<price currency="USD">4.50</price>
+				<rating star="1">&#9733;</rating>
+			</menuId>
+		</menuItem>
+		<menuItem course="Dessert">
+			<menuId gid="GF007">
+				<itemName>Baklava</itemName>
+				<description>
+				<![CDATA[
+				A rich, sweet pastry made of layers of filo filled with chopped nuts and sweetened 
+				and held together with syrup or honey.
+				]]>
+				</description>
+				<price currency="USD">$6.25</price>
+				<rating star="3">&#9733; &#9733; &#9733;</rating>
+		   </menuId>
+		</menuItem>
+		<menuItem course="Dessert">
+			<menuId gid="GF008">
+				<itemName>Bougatsa</itemName>
+				<description>
+				<![CDATA[
+				Pastry consisting of either vanilla custard or (salty) cheese filling between layers of phyllo.
+				]]>
+				</description>
+				<price currency="USD">$4.00</price>
+				<rating star="4">&#9733; &#9733; &#9733; &#9733;</rating>
+		  </menuId>
+	    </menuItem>
+		</menuItems>
+	</menu>
+</menuInfo>
+
+

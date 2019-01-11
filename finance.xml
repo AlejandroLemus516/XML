@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+	
+
+<?xml-stylesheet type="text/xsl" href="finance.xsl" ?>
+	
+	
+<finance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="index.xsd">
+
+	<title>Greek Menu Finances</title>
+	
+	<links>
+		<link>
+			<home>Home</home>
+			<menu>Menu</menu>
+			<recipe>Recipe</recipe>
+			<finance>Financial Report</finance>
+		</link>
+	</links>
+	
+	<menuItems>
+			<foodCourse>Entree</foodCourse>
+			<menuItem>Giouvetsi</menuItem>
+			<price>11.95</price>
+			<productSold>52</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Entree</foodCourse>
+			<menuItem>Gyros</menuItem>
+			<price>9.50</price>
+			<productSold>65</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Soup</foodCourse>
+			<menuItem>Fasolada</menuItem>
+			<price>7.25</price>
+			<productSold>26</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Soup</foodCourse>
+			<menuItem>Avgolemono</menuItem>
+			<price>8.50</price>
+			<productSold>35</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Appetizer</foodCourse>
+			<menuItem>Sliced Feta</menuItem>
+			<price>4.50</price>
+			<productSold>21</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Appetizer</foodCourse>
+			<menuItem>Melitzanes Tiganites</menuItem>
+			<price>4.50</price>
+			<productSold>61</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Dessert</foodCourse>
+			<menuItem>Baklava</menuItem> 
+			<price>6.25</price>
+			<productSold>72</productSold>
+	</menuItems>
+	
+	<menuItems>
+			<foodCourse>Dessert</foodCourse>
+			<menuItem>Bougatsa</menuItem>
+			<price>4.25</price>
+			<productSold>43</productSold>
+	</menuItems>
+</finance>
+
